@@ -56,12 +56,14 @@ class Hosts(object):
 
     def item(self, host):
         _arg = self.user and '@'.join([self.user, host]) or host
-        print  _arg
+        return  {"title":_arg, 'icon': 'ssh.png'}
 
     def filter(self, _filter=(lambda x: True)):
+        items=[]
         for host in self.hosts:
             if _filter(host):
-                self.item(host)
+                items.append(self.item(host))
+        return items
 
 def fetch_ssh_config(_cache, key):
     if key in _cache.keys():
@@ -132,4 +134,4 @@ if __name__ == "__main__":
     ):
         hosts.update(results)
 
-    hosts.filter(pattern.search)
+    print json.dumps(hosts.filter(pattern.search))
