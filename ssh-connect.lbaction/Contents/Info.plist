@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIconFile</key>
+	<string>ssh.png</string>
+	<key>CFBundleIdentifier</key>
+	<string>fr.peponnet.ssh-launchbar</string>
+	<key>CFBundleName</key>
+	<string>SSH Connection</string>
+	<key>CFBundleVersion</key>
+	<string>1.1</string>
+	<key>LBTextInputTitle</key>
+	<string>SSH</string>
+	<key>LBScripts</key>
+	<dict>
+		<key>LBDefaultScript</key>
+		<dict>
+			<key>LBAcceptedArgumentTypes</key>
+			<array>
+				<string>string</string>
+			</array>
+			<key>LBRequiresArgument</key>
+			<true/>
+			<key>LBScriptName</key>
+			<string>default.js</string>
+		</dict>
+		<key>LBSuggestionsScript</key>
+		<dict>
+			<key>LBScriptName</key>
+			<string>suggestions.py</string>
+			<key>LBRunInBackground</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>LBDescription</key>
+	<dict>
+		<key>LBSummary</key>
+		<string>Establish a new ssh connection using /etc/hosts, ~/.ssh/config, ~/.ssh/known_hosts and bonjour discovery protocol as suggestion's sources.</string>
+		<key>LBRequirements</key>
+		<string>Optional: to fetch zeroconf hosts you must intall pybonjour.</string>
+		<key>LBAuthor</key>
+		<string>Cyril Peponnet</string>
+		<key>LBTwitter</key>
+		<string>@CyrilPeponnet</string>
+	</dict>
+</dict>
+</plist>

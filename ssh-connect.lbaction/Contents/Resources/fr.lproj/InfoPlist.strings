@@ -1,0 +1,3 @@
+"CFBundleName" = "Connexion SSH";
+"LBSummary" = "Réalise une nouvelle connexion SSH en suggerant en historique de hosts via sur /etc/hosts, ~/.ssh/config, ~/.ssh/known_hosts et le protocol bonjour.";
+"LBRequirements" = "Optionnel : Pour récupérer les hosts en utilisant le protocol bonjour, pybonjour doit être installé";
