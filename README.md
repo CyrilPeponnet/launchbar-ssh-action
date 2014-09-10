@@ -18,4 +18,4 @@ By default ssh:// url handler is Terminal.app, if you want to use iTerm2 instead
 
 ![alt tag](http://cl.ly/BEOf/Bildschirmfoto_2011-10-23_um_21.01.41.png)
 
-This actions is inspired from alfred2 ssh workflow by isometry.
+This action is inspired from alfred2 ssh workflow by isometry.
